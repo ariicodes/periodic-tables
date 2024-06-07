@@ -5,8 +5,8 @@ dotenv.config();
 
 const connectToMongoDB = async () => {
 	const mongoUri =
-		process.env.MONGO_URI_TEST ||
 		process.env.MONGO_URI_DEVELOPMENT ||
+		process.env.MONGO_URI_TEST ||
 		process.env.MONGO_URI_PREVIEW ||
 		process.env.MONGO_URI_PRODUCTION ||
 		'mongodb://localhost:5000/development';
